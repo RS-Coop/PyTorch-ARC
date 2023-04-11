@@ -1,0 +1,7 @@
+@misc{pytorch-arc,
+  author = {Simpson, Cooper},
+  title = {{PyTorch-ARC}},
+  howpublished = {\url{github.com/RS-Coop/PyTorch-ARC}},
+  note = {{Adaptive Regularization with Cubics (ARC) optimizer for PyTorch}},
+  year = {2023}
+}

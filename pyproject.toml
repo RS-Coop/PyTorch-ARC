@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytorch-arc"
+description = "Adaptive Regularization with Cubics (ARC) optimizer for PyTorch"
+readme = "README.md"
+version = "0.1.0"
+license = {file = "LICENSE.txt"}
+authors = [
+  {name = "Cooper Simpson", email = "simpson.r.cooper@gmail.com"}
+]
+keywords = [
+  "Machine Learning",
+  "Deep Learning",
+  "Optimization"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 3-Alpha",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+requires-python = ">=3.6"
+dependencies = [
+]
+
+[tool.setuptools]
+packages = ["torch_arc"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
