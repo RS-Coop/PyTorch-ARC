@@ -1,9 +1,5 @@
 '''
-ARC sub-problem solvers.
-
-Here we implement methods for solving the regularized cubic minimization
-problem for ARC. A number of methods are implemented to be chosen at the users
-discretion.
+ARC sub-problem solvers: methods for solving the regularized cubic minimization problem.
 '''
 
 import numpy as np

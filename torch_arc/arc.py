@@ -1,6 +1,7 @@
 '''
-Custom PyTorch optimizer class that uses second order ARC.
+PyTorch optimizer class for ARC.
 '''
+
 import torch
 from torch.optim import Optimizer
 
@@ -30,8 +31,8 @@ def vec2list(v, template):
 
     return l
 
-'''Stochastic Adaptive Regularization with Cubics'''
-class SARC(Optimizer):
+'''Adaptive Regularization with Cubics'''
+class ARC(Optimizer):
     '''
     Initialize the optimizer.
 
