@@ -1,5 +1,5 @@
 @misc{pytorch-arc,
-  author = {Simpson, Cooper},
+  author = {Simpson, Cooper and Wang, Jaden},
   title = {{PyTorch-ARC}},
   howpublished = {\url{github.com/RS-Coop/PyTorch-ARC}},
   note = {{Adaptive Regularization with Cubics (ARC) optimizer for PyTorch}},

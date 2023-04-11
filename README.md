@@ -1,6 +1,6 @@
 # PyTorch ARC: Adaptive Regularization with Cubics
 
-### Author: [Cooper Simpson](https://rs-coop.github.io/)
+### Authors: [Cooper Simpson](https://rs-coop.github.io/), Jaden Wang
 
 A PyTorch implementation of the second-order optimization algorithm ARC.
 
