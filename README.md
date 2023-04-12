@@ -5,10 +5,10 @@
 A PyTorch implementation of the ARC algorithm: a second-order method for non-convex optimization. To that end, we consider a problem of the following form
 $$\min_{\mathbf{x}\in \mathbb{R}^n}f(\mathbf{x})$$
 where $f:\mathbb{R}^n\to\mathbb{R}$ is a twice continuously differentiable function. Each iteration applies an update of the following form:
-$$\mathbf{x}^{(k+1)} = \mathbf{x}^{(k)}-\mathbf{s}^{(k)}$$
-where the update $\mathbf{s}^{(k)}$ is computed via the following cubic sub-problem:
+$$\mathbf{x}^{(k+1)} = \mathbf{x}^{(k)}+\mathbf{s}^{(k)}$$
+where the update $\mathbf{s}^{(k)}$ is computed as the minimizer the following cubic sub-problem:
 $$\min_{s\in\mathbb{R}^n}\nabla f(\mathbf{x^{(k)}})s+\frac{1}{2}\mathbf{s}^T\mathbf{B}^{(k)}\mathbf{s}+\frac{\sigma_k}{3}\|\mathbf{s}\|^3$$
-The matrix $\mathbf{B}^{(k)}$ is an approximation of the Hessian $\nabla^2f(\mathbf{x}^{(k)})$, and $\sigma_k$ is the regularization term.
+The matrix $\mathbf{B}^{(k)}$ is an approximation of the Hessian $\nabla^2f(\mathbf{x}^{(k)})$, and $\sigma_k$ is the adaptive regularization term.
 
 ## License & Citation
 All source code is made available under an MIT license. You can freely use and modify the code, without warranty, so long as you provide attribution to the authors. See `LICENSE` for the full text.

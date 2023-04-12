@@ -1,1 +1,1 @@
-from .sarc_torch import SARC
+from .arc import ARC
